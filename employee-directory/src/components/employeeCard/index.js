@@ -17,7 +17,7 @@ function employeeCard (props) {
                 {props.email}
             </td>
             <td>
-                {props.country}
+                {props.phone}
             </td>
             <td>
                 {props.state}

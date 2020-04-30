@@ -18,8 +18,8 @@ function employeeList() {
                 if (employees[i].email.toLowerCase().startsWith(value.toLowerCase())) {
                     filteredArr.push(employees[i]);
                 }
-            } else if (search === "Country") {
-                if (employees[i].location.country.toLowerCase().startsWith(value.toLowerCase())) {
+            } else if (search === "Phone") {
+                if (employees[i].phone.toString().startsWith(value.toString())) {
                     filteredArr.push(employees[i]);
                 }
             } else if (search === "State") {
@@ -45,8 +45,8 @@ function employeeList() {
             sortArr.sort((a,b) => (a.name.last > b.name.last) ? 1 : -1);
         } else if (value === "Email") {
             sortArr.sort((a,b) => (a.email > b.email) ? 1 : -1);
-        } else if (value === "Country") {
-            sortArr.sort((a,b) => (a.location.country > b.location.country) ? 1 : -1);
+        } else if (value === "Phone") {
+            sortArr.sort((a,b) => (a.phone > b.phone) ? 1 : -1);
         } else if (value === "State") {
             sortArr.sort((a,b) => (a.location.state > b.location.state) ? 1 : -1);
         }
@@ -62,7 +62,7 @@ function employeeList() {
                             <option>First Name</option>
                             <option>Last Name</option>
                             <option>Email</option>
-                            <option>Country</option>
+                            <option>Phone</option>
                             <option>State</option>
                         </select>
                     </label>
