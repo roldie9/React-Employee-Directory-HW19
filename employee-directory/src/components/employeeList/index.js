@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import employeeCard from "../employeeCard"
+import EmployeeCard from "../employeeCard"
 import employees from "../../employees.json"
-import ".style.css";
+import "./style.css";
 
-function employeeList() {
+function EmployeeList() {
     const [employeeArr, setEmployeeArr] = useState(employees);
 
     // filters employees by category
@@ -81,20 +81,20 @@ function employeeList() {
                     <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>First Name</th>
                     <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>Last Name</th>
                     <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>Email</th>
-                    <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>Country</th>
+                    <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>Phone</th>
                     <th className="tableDir" onClick={e => (setEmployeeArr(e.currentTarget.textContent))}>State</th>
                 </tr>
             </thead>
             <tbody>
                 {employeeArr.map(employee => (
-                    <employeeCard picture={employee.picture.large}
+                    <EmployeeCard picture={employee.picture.large}
                         firstName={employee.name.first}
                         lastName={employee.name.last}
                         email={employee.email}
-                        country={employee.location.country}
+                        phone={employee.phone}
                         state={employee.location.state}
                         key={employee.name.last + employee.name.first}/>
-                ))}
+                ))};
             </tbody>
         </table>
         </div>
@@ -102,4 +102,4 @@ function employeeList() {
     
 }
 
-export default employeeList;
+export default EmployeeList;

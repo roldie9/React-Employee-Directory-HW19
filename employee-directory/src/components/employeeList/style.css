@@ -11,7 +11,13 @@ th {
 table {
     margin-top: 20px;
     table-layout: fixed;
-    width: 100px;
+    
+}
+
+button {
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #searchTopper {
@@ -20,4 +26,8 @@ table {
 
 #searchBox {
     margin: 10px;
+}
+
+#emptable {
+    justify-content: center;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function employeeCard (props) {
+function EmployeeCard (props) {
     return (
         <tr>
             <td>
@@ -26,4 +26,4 @@ function employeeCard (props) {
     );
 }
 
-export default employeeCard;
+export default EmployeeCard;
