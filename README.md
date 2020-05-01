@@ -8,6 +8,8 @@ The user will be able to filter the employees by name and sort the table by a ca
 
 ## Deployed Application
 
+("https://roldie9.github.io/React-Employee-Directory-HW19/")
+
 ## Programs & Technologies Used
 
 * React
